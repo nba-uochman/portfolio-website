@@ -12,6 +12,7 @@
     outline: none; border:none;
     text-transform: capitalize;
     transition: all .2s linear;
+    list-style-type: none;
 }
 
 *::selection{
@@ -206,33 +207,26 @@ header .navbar ul li a:hover{
 .about .row h3.skill-header{
     margin-top: 3.5rem;
 }
-
-.about .row div.skill-list{
+.about .row div.skill-list ul{
+    /* width: 33%; */
     display: flex;
     flex-wrap: wrap;
 }
-
-.about .row div.skill-list div{
+.about .row div.skill-list ul li{
     width: 33%;
-    position: relative;
 }
-.about .row div.skill-list div i{
+.about .row div.skill-list ul li i{
     font-size: 3rem;
     color: var(--yellow);
     margin-left: 3rem;
+    text-align: center;
 
 }
-.about .row div.skill-list div p{
+.about .row div.skill-list ul li p{
     display: inline-block;
     margin-left: 2rem;
     font-size: 2.5rem;
-}
-
-.about .row div.skill-list:nth-child(2),
-.about .row div.skill-list:nth-child(4),
-.about .row div.skill-list:nth-child(6),
-.about .row div.skill-list:nth-child(8) {
-    margin-left: 5rem;
+    text-align: center;
 }
 
 .portfolio .box-container{
@@ -554,7 +548,7 @@ section.motion{
         font-size: 50%;
     } 
 
-    .about .row div.skill-list div{
+    .about .row div.skill-list ul li{
         width: 50%;
     }
  }
@@ -573,10 +567,9 @@ section.motion{
         width: 100%;
     }
 
-    /* .about .row div.skill-list div{
-        width: 50%;
-        justify-content: center;
-    } */
+    .about .row div.skill-list ul li{
+        width: 100%;
+    }
  
     .education .box-container .box{
         width:100%;
