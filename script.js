@@ -12,11 +12,11 @@ let navbarLinks = document.querySelector("ul");
 let linkArray = Array.from(navbarLinks.children);
 
 function toggleNavbar() {
+  menu.classList.toggle("fa-times");
   header.classList.toggle("toggle");
 }
 
 menu.addEventListener("click", function () {
-  menu.classList.toggle("fa-times");
   toggleNavbar();
 });
 
