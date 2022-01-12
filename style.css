@@ -203,6 +203,38 @@ header .navbar ul li a:hover{
     display: block;
 }
 
+.about .row h3.skill-header{
+    margin-top: 3.5rem;
+}
+
+.about .row div.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .row div.skill-list div{
+    width: 33%;
+    position: relative;
+}
+.about .row div.skill-list div i{
+    font-size: 3rem;
+    color: var(--yellow);
+    margin-left: 3rem;
+
+}
+.about .row div.skill-list div p{
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+}
+
+.about .row div.skill-list:nth-child(2),
+.about .row div.skill-list:nth-child(4),
+.about .row div.skill-list:nth-child(6),
+.about .row div.skill-list:nth-child(8) {
+    margin-left: 5rem;
+}
+
 .portfolio .box-container{
     display: flex;
     align-items: center;
@@ -243,6 +275,15 @@ header .navbar ul li a:hover{
 .portfolio .box-container .box figure figcaption{
     color: #fff;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.github{
+    margin-top: 5rem;
+}
+.github p{
+    color: #fff;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -511,8 +552,11 @@ section.motion{
 
     html{
         font-size: 50%;
+    } 
+
+    .about .row div.skill-list div{
+        width: 50%;
     }
- 
  }
 
 @media (max-width:400px){
@@ -528,6 +572,11 @@ section.motion{
     .about .row .counter .box{
         width: 100%;
     }
+
+    /* .about .row div.skill-list div{
+        width: 50%;
+        justify-content: center;
+    } */
  
     .education .box-container .box{
         width:100%;
